@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matshele Data Advisory | Data you can trust, businesses that last</title>
+<meta name="description" content="Matshele Data Advisory is a South African data company. We design, build and govern data platforms for South African organisations, and we build KhumoStax, a finance platform that helps small businesses get paid and stay in business.">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<meta property="og:image" content="https://matsheledata.co.za/assets/matshele-logo.png">
+<meta property="og:title" content="Matshele Data Advisory">
+<meta property="og:description" content="Data advisory for South African organisations, and the makers of KhumoStax for small businesses.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://matsheledata.co.za/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@600;700&family=Cinzel:wght@500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#041428; --ink2:#1E3350; --gold:#A57939; --gold2:#D4AF6A; --paper:#FFFFFF; --mist:#F4F7FB; --line:#E2E9F2;
+  --muted:#53647D; --green:#00C896; --blue:#0066FF; --deep:#0B2447;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+h1,h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.08;letter-spacing:-.01em}
+h3{font-family:Inter,sans-serif;font-weight:600;line-height:1.3}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+a{color:var(--gold)}
+section{padding:96px 0}
+.mist{background:var(--mist)}
+
+/* nav */
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink);font-family:Cinzel,Georgia,serif;font-weight:600;font-size:18px;letter-spacing:.08em}
+.brand:hover{text-decoration:none}
+.brand img{height:34px;width:auto}
+.brand small{display:block;font-family:Inter,sans-serif;font-weight:600;font-size:10px;color:var(--gold);letter-spacing:.22em;text-transform:uppercase;margin-top:-1px}
+.links{display:flex;gap:28px;align-items:center}
+.links a{color:var(--ink2);font-size:15px;font-weight:500}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;font-size:15px;transition:transform .15s}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.btn.primary{background:var(--ink);color:#fff}
+.btn.ghost{border:1.5px solid var(--line);color:var(--ink)}
+.btn.green{background:var(--green);color:var(--ink)}
+
+/* hero */
+.hero{padding:96px 0 88px;background:radial-gradient(900px 420px at 85% 0%,rgba(165,121,57,.10),transparent 70%),radial-gradient(700px 380px at 0% 100%,rgba(4,20,40,.05),transparent 70%)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.hero-logo{width:100%;max-width:420px;justify-self:end}
+.hero h1{font-size:clamp(44px,6.4vw,76px);max-width:820px}
+.hero h1 .g{background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:20px;color:var(--muted);max-width:680px;margin:24px 0 36px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:72px;border-top:1px solid var(--line);padding-top:32px}
+.facts b{display:block;font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--ink)}
+.facts span{color:var(--muted);font-size:15px}
+
+/* services */
+.head{max-width:720px;margin-bottom:48px}
+.head h2{font-size:clamp(30px,4vw,42px)}
+.head .eyebrow{color:var(--gold)}
+.head p{color:var(--muted);margin-top:14px;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media (max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px}
+.card .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(165,121,57,.10);margin-bottom:18px}
+.card .ic svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15.5px}
+
+/* khumostax */
+.kx{background:var(--ink);color:#fff}
+.kx .eyebrow{color:var(--green)}
+.kx a{color:var(--green)}
+.kx-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.kx h2{font-family:Sora,sans-serif;letter-spacing:-.02em;font-size:clamp(30px,4vw,42px)}
+.kx p{color:#B7C4D8;font-size:18px;margin:18px 0}
+.kx img.logo{height:44px;margin-bottom:28px}
+.habits{display:grid;gap:14px}
+.habit{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:20px 22px}
+.habit b{font-family:Sora,sans-serif;color:var(--green);font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.habit p{margin:6px 0 0;font-size:16px;color:#DCE4F0}
+.plans{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 32px}
+.plans span{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 14px;font-size:14px;color:#DCE4F0}
+
+/* approach / about */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.steps{counter-reset:s;display:grid;gap:22px}
+.step{display:grid;grid-template-columns:44px 1fr;gap:16px}
+.step:before{counter-increment:s;content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--gold2);display:grid;place-items:center;font-family:Cinzel,serif;font-weight:600}
+.step h3{font-size:18px}
+.step p{color:var(--muted);font-size:15.5px}
+.about p{color:var(--muted);margin-bottom:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.tags span{background:#fff;border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:14px;font-weight:500}
+
+/* contact */
+.contact{text-align:center}
+.contact h2{font-size:clamp(30px,4vw,44px)}
+.contact p{color:var(--muted);font-size:18px;max-width:600px;margin:16px auto 32px}
+.contact .cta{justify-content:center}
+
+footer{background:var(--mist);border-top:1px solid var(--line);padding:48px 0;font-size:14px;color:var(--muted)}
+.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+footer h4{font-family:Inter,sans-serif;font-weight:600;color:var(--ink);font-size:14px;margin-bottom:10px}
+footer dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
+footer dt{color:var(--ink2);font-weight:500}
+.copy{margin-top:32px;padding-top:20px;border-top:1px solid var(--line)}
+
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr 1fr}
+  .kx-grid,.two,.foot,.hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-logo{justify-self:start;max-width:280px;order:-1}
+  .hero .tag{display:none}
+}
+@media (max-width:640px){
+  section{padding:64px 0}
+  .hero{padding:72px 0 64px}
+  .links a:not(.btn){display:none}
+  .grid,.facts{grid-template-columns:1fr}
+  .facts{gap:18px}
+  .brand small{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#top"><img src="assets/matshele-mark.png" alt=""><span>Matshele Data<small>Advisory</small></span></a>
+      <div class="links">
+        <a href="#services">Services</a>
+        <a href="#khumostax">KhumoStax</a>
+        <a href="#about">About</a>
+        <a class="btn primary" href="#contact">Talk to us</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid"><div>
+    <p class="eyebrow tag">Insight. Strategy. Impact.</p>
+    <h1>Data you can trust. <span class="g">Businesses that last.</span></h1>
+    <p class="lead">We help organisations govern, clean and move their data, and we build KhumoStax, the finance platform that helps small businesses get paid and stay in business.</p>
+    <div class="cta">
+      <a class="btn primary" href="#services">Data advisory</a>
+      <a class="btn ghost" href="#khumostax">Discover KhumoStax</a>
+    </div>
+    </div>
+    <img class="hero-logo" src="assets/matshele-logo.png" alt="Matshele Data Advisory: Insight. Strategy. Impact.">
+    </div>
+    <div class="facts">
+      <div><b>10+ years</b><span>in South African banking and financial-services data</span></div>
+      <div><b>POPIA first</b><span>privacy and data protection designed in from day one</span></div>
+      <div><b>Built in SA</b><span>for South African regulation, banks and SARS</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="mist">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Data advisory</p>
+      <h2>From scattered spreadsheets to data your board can rely on</h2>
+      <p>From architecture and engineering to governance and quality: practical help across the whole data lifecycle, sized for organisations that need results without a large consulting bill.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="8.5" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 10v2h11v-2M12 12v2"/></svg></div><h3>Data architecture</h3><p>Target-state designs, data models and platform choices that fit your business, your regulators and your budget, documented so teams can build to them.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6M13.5 4l-3 16"/></svg></div><h3>Data engineering</h3><p>Reliable pipelines that load, transform and reconcile data on schedule, with tests, monitoring and alerts built in.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Data governance</h3><p>Ownership, policies, data dictionaries and decision rights that people actually follow, aligned to POPIA and regulatory expectations.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h6"/><path d="M17 15l2 2 3-4"/></svg></div><h3>Data quality</h3><p>Rules, scorecards and fixes at the source, so reports agree with each other and with reality.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 1117 18z"/><path d="M12 12v6M9.5 15.5L12 18l2.5-2.5"/></svg></div><h3>Cloud migration</h3><p>Moving warehouses and pipelines to AWS with lineage kept intact, controls tested and costs watched.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 6h10M6 8l5 8M18 8l-5 8"/></svg></div><h3>Lineage and metadata</h3><p>Know where every number comes from, from source system to final report, so audits and changes are faster and safer.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>Reporting and warehousing</h3><p>Data moved into your own warehouse, with custom reports built on figures you can trust.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div><h3>Regulatory data</h3><p>Experience with credit-risk provisioning (IFRS 9) and risk-data aggregation principles (BCBS 239) in South African banking.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="khumostax" class="kx">
+  <div class="wrap kx-grid">
+    <div>
+      <img class="logo" src="assets/khumostax-logo-on-dark.svg" alt="KhumoStax">
+      <p class="eyebrow">Our product</p>
+      <h2>You built something real. KhumoStax helps you make it last.</h2>
+      <p>Most South African small businesses that close had customers. What they lacked was sight of the money: who owes what, what is due, and whether there will be enough on the 25th. KhumoStax gives owners that sight, and the habits that keep a business standing.</p>
+      <div class="plans"><span>Invoicing and quotes</span><span>Payment follow-up</span><span>Bank statement import</span><span>Payroll and leave</span><span>Cash flow outlook</span><span>Provisional tax for the self-employed</span></div>
+      <a class="btn green" href="#contact">Join the early-access list</a>
+    </div>
+    <div class="habits">
+      <div class="habit"><b>See</b><p>A Monday briefing tells you what needs attention this week, before it becomes a crisis.</p></div>
+      <div class="habit"><b>Collect</b><p>Reminders, promises to pay and follow-ups turn work done into money in the bank.</p></div>
+      <div class="habit"><b>Prepare</b><p>A cash outlook built on how each client really pays shows the dry month before it arrives.</p></div>
+      <div class="habit"><b>Start free</b><p>Plans from R0, with Solo at R99 a month for freelancers and sole proprietors.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="mist">
+  <div class="wrap two">
+    <div class="about">
+      <p class="eyebrow">About us</p>
+      <h2 style="font-size:clamp(28px,3.6vw,38px);margin-bottom:20px">Bank-grade data discipline, made available to everyone</h2>
+      <p>Matshele Data Advisory was founded by Reamogetswe Matshele, a data architect with more than ten years in South African financial services, across credit risk, regulatory reporting, data governance and cloud data platforms.</p>
+      <p>We started with a simple idea: the controls that keep large institutions' data reliable should not be out of reach for a growing business. We bring that discipline to advisory clients, and we built it into KhumoStax.</p>
+      <div class="tags"><span>Data architecture</span><span>Data engineering</span><span>Data governance</span><span>POPIA</span><span>IFRS 9</span><span>BCBS 239</span><span>AWS</span><span>Data quality</span></div>
+    </div>
+    <div>
+      <p class="eyebrow">How we work</p>
+      <div class="steps">
+        <div class="step"><div><h3>Listen</h3><p>A short conversation to understand the problem, the data you have and the decision it must support.</p></div></div>
+        <div class="step"><div><h3>Assess</h3><p>A clear view of where your data stands today, what is at risk and what to fix first.</p></div></div>
+        <div class="step"><div><h3>Deliver</h3><p>Fixed-scope work with visible milestones, documented so your team can carry it forward.</p></div></div>
+        <div class="step"><div><h3>Hand over</h3><p>Your data, your warehouse, your knowledge. No lock-in.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <p class="eyebrow">Get in touch</p>
+    <h2>Let's talk about your data</h2>
+    <p>Whether you need help with a data problem or want early access to KhumoStax, send us a note and we'll reply within one business day.</p>
+    <div class="cta">
+      <a class="btn primary" id="mail" href="mailto:info@matsheledata.co.za?subject=Enquiry%20from%20matsheledata.co.za">Email us</a>
+      <a class="btn ghost" href="mailto:info@matsheledata.co.za?subject=KhumoStax%20early%20access">KhumoStax early access</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top"><img src="assets/matshele-mark.png" alt=""><span>Matshele Data<small>Advisory</small></span></a>
+        <p style="margin-top:14px">Data advisory for South African organisations, and the makers of KhumoStax.</p>
+      </div>
+      <div>
+        <h4>Company details</h4>
+        <dl>
+          <dt>Name</dt><dd>Matshele Data Advisory (Pty) Ltd</dd>
+          <dt>Reg. no.</dt><dd>2025/498348/07</dd>
+          <dt>Director</dt><dd>Reamogetswe Matshele</dd>
+          <dt>Address</dt><dd>Centurion, Gauteng, South Africa</dd>
+        </dl>
+      </div>
+      <div>
+        <h4>Contact and privacy</h4>
+        <p><a href="mailto:info@matsheledata.co.za">info@matsheledata.co.za</a></p>
+        <p style="margin-top:10px">This site has no forms, cookies or tracking. If you email us, we use your details only to reply to you, in line with POPIA.</p>
+      </div>
+    </div>
+    <p class="copy">© <span id="yr">2026</span> Matshele Data Advisory (Pty) Ltd. KhumoStax is a product of Matshele Data Advisory.</p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
