@@ -111,6 +111,29 @@ footer dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
 footer dt{color:var(--ink2);font-weight:500}
 .copy{margin-top:32px;padding-top:20px;border-top:1px solid var(--line)}
 
+/* pricing */
+.toggle{display:inline-flex;background:var(--mist);border:1px solid var(--line);border-radius:999px;padding:4px;margin-bottom:28px}
+.toggle button{border:0;background:transparent;border-radius:999px;padding:8px 16px;font:600 14px Inter,sans-serif;color:var(--muted);cursor:pointer}
+.toggle button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(4,20,40,.15)}
+.plans5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.plan{border:1px solid var(--line);border-radius:16px;padding:22px 18px;display:flex;flex-direction:column;gap:8px;background:#fff}
+.plan.pop{border:2px solid var(--gold)}
+.plan h3{font-size:18px}
+.plan .pr{font-family:Sora,sans-serif;font-weight:700;font-size:26px;color:var(--ink)}
+.plan .pr small{font:500 13px Inter,sans-serif;color:var(--muted)}
+.plan .save{font-size:12.5px;font-weight:600;color:#027A48;min-height:18px}
+.plan p{font-size:14px;color:var(--muted)}
+.plan ul{padding-left:18px;font-size:13.5px;color:var(--ink2);line-height:1.7;flex:1}
+.fine{font-size:14px;color:var(--muted);margin-top:22px;max-width:900px}
+.fine a{font-weight:600}
+table.bands{border-collapse:collapse;margin-top:10px;font-size:14px;min-width:320px}
+table.bands th,table.bands td{padding:6px 12px;border-bottom:1px solid var(--line);text-align:left}
+table.bands td:not(:first-child),table.bands th:not(:first-child){text-align:right}
+details summary{cursor:pointer;font-weight:600;color:var(--gold)}
+.legal-links a{margin-right:14px}
+@media (max-width:1100px){.plans5{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.plans5{grid-template-columns:1fr}}
+
 @media (max-width:900px){
   .grid{grid-template-columns:1fr 1fr}
   .kx-grid,.two,.foot,.hero-grid{grid-template-columns:1fr;gap:40px}
@@ -136,6 +159,7 @@ footer dt{color:var(--ink2);font-weight:500}
       <div class="links">
         <a href="#services">Services</a>
         <a href="#khumostax">KhumoStax</a>
+        <a href="#pricing">Pricing</a>
         <a href="#about">About</a>
         <a class="btn primary" href="#contact">Talk to us</a>
       </div>
@@ -194,7 +218,7 @@ footer dt{color:var(--ink2);font-weight:500}
       <h2>You built something real. KhumoStax helps you make it last.</h2>
       <p>Most South African small businesses that close had customers. What they lacked was sight of the money: who owes what, what is due, and whether there will be enough on the 25th. KhumoStax gives owners that sight, and the habits that keep a business standing.</p>
       <div class="plans"><span>Invoicing and quotes</span><span>Payment follow-up</span><span>Bank statement import</span><span>Payroll and leave</span><span>Cash flow outlook</span><span>Provisional tax for the self-employed</span></div>
-      <a class="btn green" href="#contact">Join the early-access list</a>
+      <a class="btn green" href="#pricing">See plans and prices</a> <a class="btn" style="color:#fff;border:1.5px solid rgba(255,255,255,.3)" href="#contact">Join the early-access list</a>
     </div>
     <div class="habits">
       <div class="habit"><b>See</b><p>A Monday briefing tells you what needs attention this week, before it becomes a crisis.</p></div>
@@ -202,6 +226,39 @@ footer dt{color:var(--ink2);font-weight:500}
       <div class="habit"><b>Prepare</b><p>A cash outlook built on how each client really pays shows the dry month before it arrives.</p></div>
       <div class="habit"><b>Start free</b><p>Plans from R0, with Solo at R99 a month for freelancers and sole proprietors.</p></div>
     </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">KhumoStax pricing</p>
+      <h2>Simple plans. Start free.</h2>
+      <p>Prices per company, in South African rand. Paid plans start with a 14-day free trial, with no card needed. Cancel any time.</p>
+    </div>
+    <div class="toggle" role="group" aria-label="Billing period">
+      <button type="button" aria-pressed="true" data-cycle="m">Monthly</button>
+      <button type="button" aria-pressed="false" data-cycle="y">Yearly · 2 months free</button>
+    </div>
+    <div class="plans5">
+      <div class="plan"><h3>Freemium</h3><div class="pr">R0<small> / month</small></div><div class="save"></div><p>Getting started</p>
+        <ul><li>10 invoices and 10 quotes a month, customers, credit notes and expenses</li><li>1 sign-in</li><li>Automatic payment reminders</li><li>Monday briefing email</li></ul></div>
+      <div class="plan"><h3>Solo</h3><div class="pr"><span class="m">R99</span><span class="y" hidden>R990</span><small class="m"> / month</small><small class="y" hidden> / year</small></div><div class="save"><span class="y" hidden>Pay 10 months, get 12 · save R198</span></div><p>Self-employed, no company</p>
+        <ul><li>Invoices in your own name, travel logbook, provisional tax estimate</li><li>1 sign-in</li><li>Automatic payment reminders</li><li>Monday briefing email</li></ul></div>
+      <div class="plan pop"><h3>Basic</h3><div class="pr"><span class="m">R199</span><span class="y" hidden>R1 990</span><small class="m"> / month</small><small class="y" hidden> / year</small></div><div class="save"><span class="y" hidden>Pay 10 months, get 12 · save R398</span></div><p>Registered businesses</p>
+        <ul><li>Unlimited invoices and quotes, recurring invoices, bank statement import, accountant export</li><li>Up to 3 sign-ins</li><li>Automatic payment reminders</li><li>Monday briefing email</li></ul></div>
+      <div class="plan"><h3>Pro</h3><div class="pr"><span class="m">R499</span><span class="y" hidden>R4 990</span><small class="m"> / month</small><small class="y" hidden> / year</small></div><div class="save"><span class="y" hidden>Pay 10 months, get 12 · save R998</span></div><p>Teams</p>
+        <ul><li>Everything in Basic, plus employees, leave, claims, trips and receipt scanning</li><li>10 employees included</li><li>Automatic payment reminders</li><li>Monday briefing email</li></ul></div>
+      <div class="plan"><h3>Pro Plus</h3><div class="pr"><span class="m">R999</span><span class="y" hidden>R9 990</span><small class="m"> / month</small><small class="y" hidden> / year</small></div><div class="save"><span class="y" hidden>Pay 10 months, get 12 · save R1 998</span></div><p>Growing companies</p>
+        <ul><li>Everything, plus payroll, procurement, reports and the full AI suite</li><li>10 employees included</li><li>Automatic payment reminders</li><li>Monday briefing email</li></ul></div>
+    </div>
+    <details style="margin-top:18px">
+      <summary>Prices for bigger teams (Pro and Pro Plus, per month)</summary>
+      <table class="bands"><thead><tr><th>Employees</th><th>Pro</th><th>Pro Plus</th></tr></thead><tbody><tr><td>Up to 25</td><td>R799</td><td>R1 299</td></tr><tr><td>Up to 50</td><td>R1 299</td><td>R1 799</td></tr><tr><td>Up to 100</td><td>R2 299</td><td>R2 799</td></tr><tr><td>Up to 200</td><td>R3 799</td><td>R4 299</td></tr><tr><td>Up to 500</td><td>R8 299</td><td>R8 799</td></tr></tbody></table>
+      <p class="fine" style="margin-top:8px">Larger teams up to 10 000 employees are priced in bands; ask us for a quote. Yearly billing is 10 times the monthly price.</p>
+    </details>
+    <p class="fine">Pay by card or Instant EFT through PayFast, or by EFT. Yearly plans are charged once a year; monthly plans once a month. Prices exclude VAT, which is added if and when we are VAT-registered.
+      Read our <a href="terms.html">Terms of Service</a>, <a href="refunds.html">Refund and cancellation policy</a> and <a href="privacy.html">Privacy Notice</a>.</p>
   </div>
 </section>
 
@@ -262,9 +319,18 @@ footer dt{color:var(--ink2);font-weight:500}
         <p style="margin-top:10px">This site has no forms, cookies or tracking. If you email us, we use your details only to reply to you, in line with POPIA.</p>
       </div>
     </div>
+    <p class="legal-links" style="margin-top:18px"><a href="terms.html">Terms of Service</a><a href="refunds.html">Refunds and cancellation</a><a href="privacy.html">Privacy Notice</a></p>
     <p class="copy">© <span id="yr">2026</span> Matshele Data Advisory (Pty) Ltd. KhumoStax is a product of Matshele Data Advisory.</p>
   </div>
 </footer>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.querySelectorAll('.toggle button').forEach(function(b){b.addEventListener('click',function(){
+  var y=b.dataset.cycle==='y';
+  document.querySelectorAll('.toggle button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+  document.querySelectorAll('#pricing .y').forEach(function(e){e.hidden=!y;});
+  document.querySelectorAll('#pricing .m').forEach(function(e){e.hidden=y;});
+});});
+</script>
 </body>
 </html>
