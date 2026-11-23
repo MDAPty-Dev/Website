@@ -66,6 +66,8 @@ nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .head p{color:var(--muted);margin-top:14px;font-size:18px}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 @media (max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:1100px){.grid.values{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.grid.values{grid-template-columns:1fr}}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px}
 .card .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(165,121,57,.10);margin-bottom:18px}
 .card .ic svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -161,6 +163,7 @@ details summary{cursor:pointer;font-weight:600;color:var(--gold)}
         <a href="khumostax.html">KhumoStax</a>
         <a href="#pricing">Pricing</a>
         <a href="#about">About</a>
+        <a href="#values">Values</a>
         <a class="btn primary" href="#contact">Talk to us</a>
       </div>
     </nav>
@@ -217,13 +220,14 @@ details summary{cursor:pointer;font-weight:600;color:var(--gold)}
       <p class="eyebrow">Our product</p>
       <h2>You built something real. KhumoStax helps you make it last.</h2>
       <p>Most South African small businesses that close had customers. What they lacked was sight of the money: who owes what, what is due, and whether there will be enough on the 25th. KhumoStax gives owners that sight, and the habits that keep a business standing.</p>
-      <div class="plans"><span>Invoicing and quotes</span><span>Payment follow-up</span><span>Bank statement import</span><span>Payroll and leave</span><span>Cash flow outlook</span><span>Provisional tax for the self-employed</span></div>
+      <div class="plans"><span>Invoicing and quotes</span><span>Payment follow-up</span><span>Bank statement import</span><span>Bills to pay</span><span>Payroll and leave</span><span>Documents and renewals</span><span>Cash flow outlook</span><span>Provisional tax</span></div>
       <a class="btn green" href="khumostax.html">See it in action</a> <a class="btn" style="color:#fff;border:1.5px solid rgba(255,255,255,.3)" href="#pricing">Plans and prices</a>
     </div>
     <div class="habits">
       <div class="habit"><b>See</b><p>A Monday briefing tells you what needs attention this week, before it becomes a crisis.</p></div>
       <div class="habit"><b>Collect</b><p>Reminders, promises to pay and follow-ups turn work done into money in the bank.</p></div>
       <div class="habit"><b>Prepare</b><p>A cash outlook built on how each client really pays shows the dry month before it arrives.</p></div>
+      <div class="habit"><b>Stay ready</b><p>Reminders before your CSD, tax compliance, B-BBEE or COIDA documents lapse, so no tender is lost to paperwork.</p></div>
       <div class="habit"><b>Start free</b><p>Plans from R0, with Solo at R99 a month for freelancers and sole proprietors.</p></div>
     </div>
   </div>
@@ -279,6 +283,18 @@ details summary{cursor:pointer;font-weight:600;color:var(--gold)}
         <div class="step"><div><h3>Deliver</h3><p>Fixed-scope work with visible milestones, documented so your team can carry it forward.</p></div></div>
         <div class="step"><div><h3>Hand over</h3><p>Your data, your warehouse, your knowledge. No lock-in.</p></div></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="values">
+  <div class="wrap">
+    <div class="head"><p class="eyebrow">What we stand for</p><h2>Our values</h2><p>They guide what we build, who we build it for, and how we behave when nobody is checking.</p></div>
+    <div class="grid values">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 14v4a2 2 0 002 2h10a2 2 0 002-2v-4"/></svg></div><h3>Enabling</h3><p>We put tools and know-how that large institutions take for granted in the hands of people who build businesses with far less. Success is measured by what our clients can now do for themselves.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Trust</h3><p>Your data is yours. We protect it, we are open about how we use it, and we build controls so that the numbers can be relied on by you, your bank and your clients.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2.5 20c.7-3.2 2.9-5 5.5-5s4.8 1.8 5.5 5M10.5 20c.7-3.2 2.9-5 5.5-5s4.8 1.8 5.5 5"/></svg></div><h3>Community-driven</h3><p>Local businesses keep money, jobs and skills in their communities. We build with them, listen to what they need, and work with the corporates and programmes that support them.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/></svg></div><h3>Building resilience</h3><p>Businesses rarely close for lack of customers; they close for lack of sight. We help owners see trouble early and build the habits that keep a business standing through hard months.</p></div>
     </div>
   </div>
 </section>
