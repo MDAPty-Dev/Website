@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Notice (POPIA) | Matshele Data Advisory and KhumoStax</title>
-<meta name="description" content="Privacy Notice (POPIA) for KhumoStax, operated by Matshele Data Advisory (Pty) Ltd.">
+<meta name="description" content="Privacy Notice (POPIA) for KhumoStax and this website, from Matshele Data Advisory (Pty) Ltd. Information Officer registered with the Information Regulator, 2026-073024.">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,22 +32,129 @@ dl{display:grid;grid-template-columns:minmax(140px,max-content) 1fr;gap:4px 16px
 dt{color:var(--muted)} dd{margin:0;overflow-wrap:anywhere}
 footer{max-width:860px;margin:0 auto 40px;padding:0 20px;font-size:13px;color:var(--muted)}
 @media print{header,footer nav{display:none} main{border:0}}
+h3{font-size:16px;margin:22px 0 6px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;margin:6px 0 14px;table-layout:fixed}
+th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line);color:var(--ink2);overflow-wrap:anywhere}
+th{background:var(--mist);color:var(--ink)}
+thead th:empty{display:none}
+.kv td:first-child{font-weight:600;color:var(--ink);width:36%}
+@media(max-width:560px){dl{grid-template-columns:1fr;gap:0} dd{margin-bottom:8px}}
 </style>
 </head>
 <body>
 <header><div class="bar">
   <a class="brand" href="/"><img src="assets/matshele-mark.png" alt="">Matshele Data</a>
-  <nav><a href="/#pricing">Pricing</a><a href="terms.html">Terms</a><a href="refunds.html">Refunds</a><a href="privacy.html">Privacy</a></nav>
+  <nav><a href="/#pricing">Pricing</a><a href="terms.html">Terms</a><a href="refunds.html">Refunds</a><a href="privacy.html">Privacy</a><a href="dpa.html">Data processing</a></nav>
 </div></header>
 <main>
   <h1>Privacy Notice (POPIA)</h1>
-  <div class="ver">KhumoStax · Version 2026-11c · Matshele Data Advisory (Pty) Ltd</div>
-  <p>This notice explains how <b>Matshele Data Advisory (Pty) Ltd</b>, operator of KhumoStax and of this website, handles personal information under the Protection of Personal Information Act, 2013 (POPIA).</p><h2>1. This website</h2><p>This website has no forms, cookies or tracking. It loads its fonts from Google Fonts, which receives your IP address to deliver them. If you email us, we use your details only to reply to you and keep the email for as long as needed for that conversation.</p><h2>2. KhumoStax: two roles</h2><ul><li>For your own account details (name, email, billing contact, sign-in activity) we are the responsible party.</li><li>For information your business puts into KhumoStax about employees, clients and suppliers, your business is the responsible party and we are its operator: we process that information only on your instructions and to run the service.</li></ul><h2>3. What we collect</h2><ul><li>Account and contact details of users.</li><li>Business records you enter: invoices, expenses, payroll, leave, claims, purchase orders.</li><li>Bank statement lines you import. The statement file itself and any PDF password are used once to read the transactions and are not stored.</li><li>Receipt photos you upload.</li><li>Payment records for your subscription. Card and Instant EFT payments are handled on PayFast&rsquo;s secure pages (PCI-DSS certified). We never see or store card numbers; if you ask us to keep your card, we hold only a token that lets us charge your renewals.</li><li>Technical logs needed for security, such as sign-in times and audit trails.</li></ul><h2>4. Why we use it</h2><p>To provide and secure the service, bill for it, send the emails you or your administrator switch on (invoices, approvals, billing), give support, and meet legal obligations. We do not sell personal information and we do not use your business data for advertising.</p><h2>5. Where it is stored</h2><p>KhumoStax is hosted on Amazon Web Services in the Africa (Cape Town) region. Each business&rsquo;s data is kept separate from every other business&rsquo;s. If automatic receipt reading is switched on, the receipt image is sent to Amazon Textract in Ireland (EU) to read it, a country with data protection law comparable to POPIA. Emails are sent through Amazon SES.</p><h2>6. Who we share it with</h2><p>Only service providers that help run KhumoStax (AWS for hosting, storage, email and receipt reading; PayFast, and Paystack as a back-up, for payments; our email provider for our own mailboxes), under agreements that require them to protect it, or where the law requires.</p><h2>7. Security</h2><ul><li>Encryption in transit (HTTPS) and at rest.</li><li>Strict separation between businesses, enforced in the database itself.</li><li>Role-based access within each business, and an audit trail of changes and data extracts.</li><li>Regular backups.</li></ul><p>If we become aware of a security compromise affecting personal information we will notify the affected business and, where required, the Information Regulator.</p><h2>8. How long we keep it</h2><p>While your account is active. The account owner can download a copy and ask for deletion at any time; deleted data is removed after a seven-day cooling-off period. Financial records of your subscription are kept for five years where tax law requires.</p><h2>9. Your rights</h2><p>You may ask to see, correct or delete your personal information, or object to its processing. A business using KhumoStax can download a copy of its data and ask for deletion itself in Settings &rarr; Privacy. Employees and clients of a KhumoStax customer should contact that business first. Contact our Information Officer (Reamogetswe Matshele) at <a href="mailto:reamogetswe@matsheledata.co.za">reamogetswe@matsheledata.co.za</a>. You may also complain to the Information Regulator (South Africa) at <a href="https://inforeg.org.za">inforeg.org.za</a>.</p><div class="details"><div class="dh">Company details</div><dl>
+  <div class="ver">KhumoStax · Version 2026-11d · Matshele Data Advisory (Pty) Ltd</div>
+<p>This notice explains how <strong>Matshele Data Advisory (Pty) Ltd</strong>, the company that runs KhumoStax and this website, handles personal information under the Protection of Personal Information Act, 2013 (POPIA).</p>
+<h2>1. Who we are and how to reach us</h2>
+<table class="kv">
+<tbody>
+<tr>
+<td>Responsible party</td>
+<td>Matshele Data Advisory (Pty) Ltd, registration number 2025/498348/07, Centurion, South Africa</td>
+</tr>
+<tr>
+<td>Information Officer</td>
+<td>Reamogetswe Matshele</td>
+</tr>
+<tr>
+<td>Information Regulator registration</td>
+<td>2026-073024</td>
+</tr>
+<tr>
+<td>Privacy questions and requests</td>
+<td><a href="mailto:reamogetswe@matsheledata.co.za">reamogetswe@matsheledata.co.za</a></td>
+</tr>
+</tbody>
+</table>
+<h2>2. This website</h2>
+<p>This website has no forms, cookies or tracking. It loads its fonts from Google Fonts, which receives your IP address to deliver them. If you email us, we use your details only to reply to you and keep the email for as long as needed for that conversation.</p>
+<h2>3. KhumoStax: our two roles</h2>
+<ul>
+<li><strong>For your own account</strong> (your name, email, billing contact and sign-in activity), we decide how the information is used. POPIA calls us the responsible party.</li>
+<li><strong>For what your business puts into KhumoStax</strong> about its employees, clients and suppliers, your business is the responsible party. We are its operator: we process that information only on your business's instructions and only to run the service. Our <a href="dpa.html">Data Processing Agreement</a> sets out these terms.</li>
+</ul>
+<h2>4. What we collect</h2>
+<ul>
+<li>Account and contact details of users.</li>
+<li>Business records you enter: quotes, invoices, expenses, bills, purchase orders, leave, claims and trips.</li>
+<li>Employee details your business enters for payroll, such as ID or passport numbers, tax numbers, bank details and salaries.</li>
+<li>Bank statement lines you import. The statement file and any PDF password are used once to read the transactions and are never stored.</li>
+<li>Receipt photos and supplier invoice PDFs you upload.</li>
+<li>Payment records for your subscription. Card and Instant EFT payments happen on PayFast's secure pages. We never see or store card numbers; if you ask us to keep your card, we hold only a token that lets us charge your renewals.</li>
+<li>Security records: sign-in times, sessions and an audit trail of changes and exports.</li>
+</ul>
+<h2>5. Why we use it</h2>
+<table>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>Lawful basis (POPIA section 11)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Providing the service you signed up for, and support</td>
+<td>Performing our agreement with you</td>
+</tr>
+<tr>
+<td>Billing, tax invoices and record keeping</td>
+<td>Our agreement, and tax law</td>
+</tr>
+<tr>
+<td>Keeping accounts secure and investigating misuse</td>
+<td>Our legitimate interest in protecting you and the service</td>
+</tr>
+<tr>
+<td>Emails you or your administrator switch on (invoices, reminders, approvals, briefings)</td>
+<td>Your instructions</td>
+</tr>
+<tr>
+<td>Product news</td>
+<td>Your consent; you can unsubscribe at any time</td>
+</tr>
+</tbody>
+</table>
+<p>We do not sell personal information. We do not use your business data for advertising or to train AI models.</p>
+<h2>6. Where it is stored, and transfers outside South Africa</h2>
+<p>KhumoStax runs on Amazon Web Services in the Africa (Cape Town) region, and email is sent through Amazon SES in the same region. One feature sends data outside South Africa: if your business switches on automatic receipt reading, the receipt image is sent to Amazon Textract in Ireland to read the supplier, date and amounts. Ireland is bound by the EU General Data Protection Regulation, which gives protection at least as strong as POPIA, as section 72 requires. We have told AWS not to use these images to improve its own services. Businesses that do not want this can type receipts in by hand.</p>
+<h2>7. Who we share it with</h2>
+<p>Only service providers that help run KhumoStax, under agreements that require them to protect it: Amazon Web Services (hosting, storage, email and receipt reading), PayFast and Paystack (payments), and our email provider for our own mailboxes. We share information with authorities only where the law requires it.</p>
+<h2>8. How we protect it</h2>
+<ul>
+<li>Encryption in transit (HTTPS) and at rest.</li>
+<li>Each business's records are kept apart from every other business's, enforced by the application and by the database itself.</li>
+<li>Roles within each business. Employees see only their own payslips and records.</li>
+<li>Automatic sign-out after a period of inactivity, shorter for employees.</li>
+<li>Changes to imported bank statements need a second person's approval, and every change and export is logged.</li>
+<li>Daily encrypted backups, with a copy in a separate, locked account.</li>
+</ul>
+<h2>9. If something goes wrong</h2>
+<p>If we have reasonable grounds to believe that personal information has been accessed or acquired by someone not authorised to, we will tell the Information Regulator and the people affected as soon as reasonably possible, as section 22 requires. Where the information belongs to your business's employees, clients or suppliers, we tell your business straight away and help it notify them.</p>
+<h2>10. How long we keep it</h2>
+<ul>
+<li>While your account is open.</li>
+<li>When a business asks for deletion in Settings → Privacy, we email a full copy, delete everything seven days later (the request can be cancelled until then) and email a final copy. Backups that still hold the data expire within 35 days.</li>
+<li>Our own invoices and payment records for your subscription are kept for five years, as tax law requires.</li>
+</ul>
+<h2>11. Your rights</h2>
+<p>You may ask what personal information we hold about you and ask us to correct or delete it. You may also object to its use, and withdraw consent to product news at any time. A business can download its data or ask for deletion itself in Settings → Privacy. If you are an employee, client or supplier of a business that uses KhumoStax, please contact that business first; we will help it respond.</p>
+<p>Write to our Information Officer at <a href="mailto:reamogetswe@matsheledata.co.za">reamogetswe@matsheledata.co.za</a>. We reply within 30 days.</p>
+<p>If you are not satisfied, you may complain to the Information Regulator (South Africa): Woodmead North Office Park, 54 Maxwell Drive, Woodmead, Johannesburg; <a href="https://inforegulator.org.za">inforegulator.org.za</a>.</p>
+<h2>12. Changes to this notice</h2>
+<p>We will email account owners before any change that affects how we use their information. The version is shown at the top of this notice.</p>
+<div class="details"><div class="dh">Company details</div><dl>
 <dt>Supplier</dt><dd>Matshele Data Advisory (Pty) Ltd</dd><dt>Legal status</dt><dd>Private company registered in South Africa (CIPC)</dd>
 <dt>Registration number</dt><dd>2025/498348/07</dd><dt>Director</dt><dd>Reamogetswe Matshele</dd>
-<dt>Address</dt><dd>Centurion, Gauteng, South Africa</dd><dt>Email</dt><dd><a href="mailto:reamogetswe@matsheledata.co.za">reamogetswe@matsheledata.co.za</a></dd><dt>Website</dt><dd><a href="/">https://matsheledata.co.za</a></dd>
+<dt>Address</dt><dd>Centurion, Gauteng, South Africa</dd><dt>Information Officer</dt><dd>Reamogetswe Matshele</dd>
+<dt>Information Regulator registration</dt><dd>2026-073024</dd>
+<dt>Email</dt><dd><a href="mailto:reamogetswe@matsheledata.co.za">reamogetswe@matsheledata.co.za</a></dd><dt>Website</dt><dd><a href="/">https://matsheledata.co.za</a></dd>
 </dl></div>
 </main>
-<footer>© Matshele Data Advisory (Pty) Ltd · Reg. 2025/498348/07 · <a href="mailto:reamogetswe@matsheledata.co.za">reamogetswe@matsheledata.co.za</a></footer>
+<footer>© Matshele Data Advisory (Pty) Ltd · Reg. 2025/498348/07 · Information Officer registered with the Information Regulator (2026-073024) · <a href="mailto:reamogetswe@matsheledata.co.za">reamogetswe@matsheledata.co.za</a></footer>
 </body>
 </html>
