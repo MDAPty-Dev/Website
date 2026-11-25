@@ -86,7 +86,7 @@ thead th:empty{display:none}
 <li>Employee details your business enters for payroll, such as ID or passport numbers, tax numbers, bank details and salaries.</li>
 <li>Bank statement lines you import. The statement file and any PDF password are used once to read the transactions and are never stored.</li>
 <li>Receipt photos and supplier invoice PDFs you upload.</li>
-<li>Payment records for your subscription. Card and Instant EFT payments happen on PayFast's secure pages. We never see or store card numbers; if you ask us to keep your card, we hold only a token that lets us charge your renewals.</li>
+<li>Payment records for your subscription. Card, Instant EFT and Capitec Pay payments happen on Paystack's secure pages. We never see or store card numbers; if you ask us to keep your card, we hold only a token that lets us charge your renewals.</li>
 <li>Security records: sign-in times, sessions and an audit trail of changes and exports.</li>
 </ul>
 <h2>5. Why we use it</h2>
@@ -124,7 +124,7 @@ thead th:empty{display:none}
 <h2>6. Where it is stored, and transfers outside South Africa</h2>
 <p>KhumoStax runs on Amazon Web Services in the Africa (Cape Town) region, and email is sent through Amazon SES in the same region. One feature sends data outside South Africa: if your business switches on automatic receipt reading, the receipt image is sent to Amazon Textract in Ireland to read the supplier, date and amounts. Ireland is bound by the EU General Data Protection Regulation, which gives protection at least as strong as POPIA, as section 72 requires. We have told AWS not to use these images to improve its own services. Businesses that do not want this can type receipts in by hand.</p>
 <h2>7. Who we share it with</h2>
-<p>Only service providers that help run KhumoStax, under agreements that require them to protect it: Amazon Web Services (hosting, storage, email and receipt reading), PayFast and Paystack (payments), and our email provider for our own mailboxes. We share information with authorities only where the law requires it.</p>
+<p>Only service providers that help run KhumoStax, under agreements that require them to protect it: Amazon Web Services (hosting, storage, email and receipt reading), Paystack (payments), and our email provider for our own mailboxes. We share information with authorities only where the law requires it.</p>
 <h2>8. How we protect it</h2>
 <ul>
 <li>Encryption in transit (HTTPS) and at rest.</li>
