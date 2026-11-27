@@ -184,6 +184,11 @@ details summary{cursor:pointer;font-weight:600;color:var(--gold)}
   .alsogrid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){.alsogrid{grid-template-columns:1fr}.cta-band{padding:32px 24px}.tour-hero{padding-top:64px}.feature{padding:40px 0}}
+.grid.sec{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1100px){.grid.sec{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.grid.sec{grid-template-columns:1fr}}
+.secnote{margin-top:28px;color:var(--muted);font-size:15.5px;max-width:900px}
+.secnote b{color:var(--ink)}
 </style>
 </head>
 <body>
@@ -194,6 +199,7 @@ details summary{cursor:pointer;font-weight:600;color:var(--gold)}
       <div class="links">
         <a href="index.html#services">Services</a>
         <a href="khumostax.html">KhumoStax</a>
+        <a href="#security">Security</a>
         <a href="index.html#pricing">Pricing</a>
         <a href="index.html#about">About</a>
         <a class="btn primary" href="index.html#contact">Talk to us</a>
@@ -259,6 +265,27 @@ details summary{cursor:pointer;font-weight:600;color:var(--gold)}
     <div class="alsogrid"><div class="also"><b>Customers</b><span>Contacts, statements and payment history</span></div><div class="also"><b>Expenses and receipts</b><span>Snap a receipt; KhumoStax reads it</span></div><div class="also"><b>Claims and trips</b><span>Staff claims and a SARS travel logbook</span></div><div class="also"><b>Leave</b><span>Balances, approvals and a team calendar</span></div><div class="also"><b>Purchase orders</b><span>Approvals, supplier certificates and bills to pay</span></div><div class="also"><b>Credit commitments</b><span>Loans, overdrafts and leases in one list, with payoff dates</span></div><div class="also"><b>Asset register</b><span>What you own, its wear and tear and insurance dates</span></div><div class="also"><b>Director&rsquo;s loan</b><span>Money directors put in and took out, private to each director</span></div><div class="also"><b>Your financial year</b><span>Reports and tax dates follow your own year end</span></div><div class="also"><b>Bulk claims</b><span>Import staff claims from a spreadsheet</span></div><div class="also"><b>Accountant export</b><span>Journals your accountant can load, checked before they go</span></div><div class="also"><b>POPIA built in</b><span>Export or remove a person&rsquo;s data when they ask</span></div><div class="also"><b>Cash outlook</b><span>The next 90 days, based on how each client really pays</span></div><div class="also"><b>Monday briefing</b><span>What needs attention this week, by email</span></div><div class="also"><b>Provisional tax</b><span>An estimate for the self-employed on Solo</span></div></div>
   </div>
 </section>
+<section id="security">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Security and privacy</p>
+      <h2>KhumoStax is built with the security habits of a bank</h2>
+      <p>We spent a decade protecting data in South African banks. Those habits are built into KhumoStax, and they are on for every company, on every plan.</p>
+    </div>
+    <div class="grid sec">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg></div><h3>Kept in South Africa, encrypted</h3><p>Your records are stored in Amazon Web Services&rsquo; Cape Town region, encrypted on disk and on every connection.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="1.5"/><rect x="13" y="4" width="8" height="16" rx="1.5"/></svg></div><h3>Walled off from other companies</h3><p>Two separate locks keep each company apart: the app checks every request, and the database itself refuses to show another company&rsquo;s rows.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2M10 9l1.5 1.5L14 8"/></svg></div><h3>Two-step sign-in</h3><p>A code from an authenticator app after the password, so a stolen password isn&rsquo;t enough. Owners can make it compulsory for admins.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.8 3.6-6 7-6s6.2 2.2 7 6"/></svg></div><h3>Only what each person needs</h3><p>Staff see only their own payslips, leave and claims, and everyone is signed out after a period of inactivity the owner sets.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9"/></svg></div><h3>Changes need a second person</h3><p>Payroll, purchase orders and changes to bank lines already in the books need approval. Every sign-in and change is in the audit trail.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Watched around the clock</h3><p>AWS threat detection watches our systems day and night, every change to them is recorded in a log that can&rsquo;t be altered, and we&rsquo;re alerted straight away.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Attacked before every release</h3><p>Each update faces over a thousand automated attack attempts, such as one company trying to reach another&rsquo;s records. If one gets through, the update doesn&rsquo;t ship.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 109-9 9.75 9.75 0 00-6.74 2.74L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></div><h3>Backed up every day</h3><p>Daily backups, and the database can be restored to any minute in the last 14 days.</p></div>
+    </div>
+    <p class="secnote"><b>POPIA:</b> our Information Officer is registered with the Information Regulator, and a <a href="dpa.html">Data Processing Agreement</a> comes with every account. Owners can download or delete their company&rsquo;s data at any time. Bank statement files and their passwords are never stored, and card details stay with Paystack: KhumoStax never sees them. Read the <a href="privacy.html">Privacy Notice</a>.</p>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <div class="cta-band">
